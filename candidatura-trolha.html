@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#214d40">
+<title>Candidatura · Trabalho de pedreiro (trolha) em Portugal</title>
+<style>
+:root{color-scheme:light;--paper:#f6f3ec;--ink:#25352e;--muted:#5c6961;--green:#214d40;--line:#d7ded6;--pale:#e8efe7}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 system-ui,-apple-system,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer;touch-action:manipulation}button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #ad6c25;outline-offset:4px}[hidden]{display:none!important}.wrap{max-width:700px;margin:auto;padding:28px 20px 48px}.brand{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:700}.mark{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--green);color:white;font-size:22px}.brand small{display:block;font-size:12px;font-weight:400;color:var(--muted)}.card{margin-top:28px;padding:32px;background:white;border:1px solid var(--line);border-radius:22px;box-shadow:0 12px 40px #25352e08}.eyebrow{margin:0 0 12px;color:var(--green);font-size:12px;font-weight:750;letter-spacing:.09em;text-transform:uppercase}h1,h2{line-height:1.22;letter-spacing:-.035em}h1{font-size:clamp(30px,6vw,42px);margin:0 0 20px}h2{font-size:clamp(25px,5vw,32px);margin:18px 0}p{margin:12px 0}.muted,.hint{color:var(--muted)}.hint{font-size:15px}.notice{padding:16px;background:var(--pale);border-radius:12px;font-size:15px;margin:22px 0}.primary,.secondary,.choice{min-height:52px;border-radius:12px;padding:13px 18px;font-weight:650}.primary{border:1px solid var(--green);background:var(--green);color:white}.secondary{border:1px solid var(--line);background:white;color:var(--green)}.wide{width:100%}.progress-label{display:flex;justify-content:space-between;gap:12px;margin-bottom:10px;font-size:13px;color:var(--muted)}progress{display:block;width:100%;height:7px;border:0;border-radius:10px;overflow:hidden;background:var(--pale);accent-color:var(--green)}progress::-webkit-progress-bar{background:var(--pale)}progress::-webkit-progress-value{background:var(--green)}.choices{display:grid;gap:10px;margin:24px 0}.choice{display:flex;align-items:center;gap:12px;text-align:left;border:1px solid var(--line);background:white;color:var(--ink);font-weight:500}.choice::before{content:'';flex-shrink:0;width:19px;height:19px;border:2px solid #88998c;border-radius:50%}.choice[aria-pressed=true]{border:2px solid var(--green);padding:12px 17px;background:var(--pale)}.choice[aria-pressed=true]::before{border:6px solid var(--green);background:white}input,textarea,select{display:block;width:100%;margin:20px 0 8px;border:1px solid #9caba0;border-radius:12px;padding:15px;background:#fff;color:var(--ink);min-height:56px}textarea{resize:vertical;min-height:150px}.phone-row{display:flex;flex-wrap:wrap;gap:10px}.phone-row select{flex:1 1 200px;margin:20px 0 8px}.phone-row input{flex:1 1 160px;margin:20px 0 8px}.actions{display:flex;gap:12px;justify-content:space-between;margin-top:28px}.actions .primary{flex:1}.error{color:#9b2820;font-size:15px}.foot{font-size:12px;color:var(--muted);text-align:center;margin-top:22px}.review-item{padding:17px 0;border-bottom:1px solid var(--line)}.review-item h3{font-size:15px;margin:0}.review-item p{white-space:pre-wrap;overflow-wrap:anywhere;margin:6px 0 10px}.edit{background:none;border:0;color:var(--green);text-decoration:underline;padding:10px 0;font-size:14px;min-height:44px}.stack{display:grid;gap:12px;margin-top:22px}details{margin-top:24px}summary{cursor:pointer;min-height:44px}#exportText{font-size:14px;min-height:260px}h2:focus,h1:focus{outline:none}@media(max-width:480px){.wrap{padding:20px 14px 32px}.card{padding:23px 20px;margin-top:22px;border-radius:18px}.actions{gap:8px}.primary,.secondary{padding:13px 14px}}@media(prefers-reduced-motion:no-preference){.card{animation:arrive .2s ease-out}@keyframes arrive{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="brand"><span class="mark" aria-hidden="true">↗</span><div>Trabalho em Portugal<small>Candidatura · Pedreiro (trolha)</small></div></header>
+  <section id="welcome" class="card">
+    <p class="eyebrow">O primeiro passo começa aqui</p>
+    <h1>Conte-nos a sua experiência.</h1>
+    <p class="muted">Responda a algumas perguntas para avaliarmos a sua candidatura a trabalho de pedreiro de construção civil (trolha) em Portugal.</p>
+    <div class="notice">Uma pergunta de cada vez. Pode voltar atrás e corrigir as respostas antes de as partilhar.</div>
+    <p class="hint">Reserve cerca de 10 a 15 minutos. Quando uma pergunta não se aplicar, pode indicar «Não se aplica».</p>
+    <p class="hint">As respostas ficam apenas nesta página até decidir partilhá-las. Se fechar ou atualizar a página, terá de começar novamente.</p>
+    <button id="start" class="primary wide" type="button">Começar candidatura →</button>
+  </section>
+  <section id="question" class="card" hidden aria-labelledby="questionTitle">
+    <div class="progress-label"><span id="counter"></span><span id="stage"></span></div>
+    <progress id="progress" max="100" value="0" aria-label="Progresso do questionário"></progress>
+    <form id="form" novalidate>
+      <h2 id="questionTitle" tabindex="-1"></h2>
+      <p id="hint" class="hint"></p>
+      <div id="answer"></div>
+      <p id="error" class="error" role="alert"></p>
+      <div class="actions"><button id="back" class="secondary" type="button">← Voltar</button><button id="next" class="primary" type="submit">Continuar →</button></div>
+    </form>
+  </section>
+  <section id="review" class="card" hidden>
+    <p class="eyebrow">Antes de terminar</p><h2 id="reviewTitle" tabindex="-1">Confira as suas respostas.</h2>
+    <p class="hint">Pode corrigir qualquer resposta. Ainda não enviou a candidatura.</p>
+    <div id="reviewList"></div>
+    <div class="actions"><button id="reviewBack" type="button" class="secondary">← Voltar</button><button id="finish" type="button" class="primary">Preparar respostas →</button></div>
+  </section>
+  <section id="done" class="card" hidden>
+    <p class="eyebrow">Último passo</p><h2 id="doneTitle" tabindex="-1">As respostas estão prontas.</h2>
+    <p id="deliveryIntro">Para entregar a candidatura, envie as respostas por WhatsApp.</p>
+    <div class="notice">A candidatura ainda não foi enviada. Toque no botão para abrir o WhatsApp com as respostas já preenchidas e confirme o envio.</div>
+    <div class="stack"><button id="whatsapp" type="button" class="primary">Enviar por WhatsApp</button></div>
+    <p id="deliveryStatus" role="status" class="hint"></p>
+    <details><summary>Ver texto para envio</summary><textarea id="exportText" readonly aria-label="Respostas para envio"></textarea></details>
+    <p class="hint">Se tiver currículo, certificados, carta de recomendação ou fotos de obras, envie-os separadamente ao contacto de recrutamento. Não envie fotografia do passaporte nesta fase.</p>
+    <button id="editAll" class="edit" type="button">Voltar à revisão</button>
+  </section>
+  <p class="foot">Não indique dados bancários, número de passaporte ou morada completa.</p>
+  <noscript><p class="notice">Para preencher este questionário, abra a página num navegador com JavaScript ativado.</p></noscript>
+</main>
+<script>
+'use strict';
+// Número de WhatsApp de destino das candidaturas (sem sinal +).
+const WHATSAPP_NUMBER='2385930630';
+const COUNTRY_CODES=[['Cabo Verde','+238'],['Afeganistão','+93'],['África do Sul','+27'],['Albânia','+355'],['Alemanha','+49'],['Andorra','+376'],['Angola','+244'],['Antígua e Barbuda','+1268'],['Arábia Saudita','+966'],['Argélia','+213'],['Argentina','+54'],['Arménia','+374'],['Austrália','+61'],['Áustria','+43'],['Azerbaijão','+994'],['Bahamas','+1242'],['Bangladeche','+880'],['Barbados','+1246'],['Barém','+973'],['Bélgica','+32'],['Belize','+501'],['Benim','+229'],['Bielorrússia','+375'],['Birmânia (Myanmar)','+95'],['Bolívia','+591'],['Bósnia e Herzegovina','+387'],['Botsuana','+267'],['Brasil','+55'],['Brunei','+673'],['Bulgária','+359'],['Burquina Faso','+226'],['Burúndi','+257'],['Butão','+975'],['Camboja','+855'],['Camarões','+237'],['Canadá','+1'],['Catar','+974'],['Cazaquistão','+7'],['Chade','+235'],['Chile','+56'],['China','+86'],['Chipre','+357'],['Colômbia','+57'],['Comores','+269'],['Congo (Brazzaville)','+242'],['Congo (RDC)','+243'],['Coreia do Norte','+850'],['Coreia do Sul','+82'],['Costa do Marfim','+225'],['Costa Rica','+506'],['Croácia','+385'],['Cuba','+53'],['Dinamarca','+45'],['Domínica','+1767'],['Egito','+20'],['El Salvador','+503'],['Emirados Árabes Unidos','+971'],['Equador','+593'],['Eritreia','+291'],['Eslováquia','+421'],['Eslovénia','+386'],['Espanha','+34'],['Estados Unidos','+1'],['Estónia','+372'],['Etiópia','+251'],['Fiji','+679'],['Filipinas','+63'],['Finlândia','+358'],['França','+33'],['Gabão','+241'],['Gâmbia','+220'],['Gana','+233'],['Geórgia','+995'],['Granada','+1473'],['Grécia','+30'],['Guatemala','+502'],['Guiana','+592'],['Guiné','+224'],['Guiné Equatorial','+240'],['Guiné-Bissau','+245'],['Haiti','+509'],['Holanda','+31'],['Honduras','+504'],['Hong Kong','+852'],['Hungria','+36'],['Iémen','+967'],['Índia','+91'],['Indonésia','+62'],['Irão','+98'],['Iraque','+964'],['Irlanda','+353'],['Islândia','+354'],['Israel','+972'],['Itália','+39'],['Jamaica','+1876'],['Japão','+81'],['Jordânia','+962'],['Kuwait','+965'],['Laos','+856'],['Lesoto','+266'],['Letónia','+371'],['Líbano','+961'],['Libéria','+231'],['Líbia','+218'],['Listenstaine','+423'],['Lituânia','+370'],['Luxemburgo','+352'],['Macau','+853'],['Macedónia do Norte','+389'],['Madagáscar','+261'],['Malásia','+60'],['Malawi','+265'],['Maldivas','+960'],['Mali','+223'],['Malta','+356'],['Marrocos','+212'],['Maurícia','+230'],['Mauritânia','+222'],['México','+52'],['Moçambique','+258'],['Moldávia','+373'],['Mónaco','+377'],['Mongólia','+976'],['Montenegro','+382'],['Namíbia','+264'],['Nepal','+977'],['Nicarágua','+505'],['Níger','+227'],['Nigéria','+234'],['Noruega','+47'],['Nova Zelândia','+64'],['Omã','+968'],['Panamá','+507'],['Papua-Nova Guiné','+675'],['Paquistão','+92'],['Paraguai','+595'],['Peru','+51'],['Polónia','+48'],['Portugal','+351'],['Quénia','+254'],['Quirguistão','+996'],['Reino Unido','+44'],['República Centro-Africana','+236'],['República Checa','+420'],['República Dominicana','+1809'],['Roménia','+40'],['Ruanda','+250'],['Rússia','+7'],['Samoa','+685'],['Santa Lúcia','+1758'],['São Tomé e Príncipe','+239'],['Senegal','+221'],['Serra Leoa','+232'],['Sérvia','+381'],['Seicheles','+248'],['Singapura','+65'],['Síria','+963'],['Somália','+252'],['Sri Lanca','+94'],['Essuatíni','+268'],['Sudão','+249'],['Sudão do Sul','+211'],['Suécia','+46'],['Suíça','+41'],['Suriname','+597'],['Tailândia','+66'],['Taiwan','+886'],['Tajiquistão','+992'],['Tanzânia','+255'],['Timor-Leste','+670'],['Togo','+228'],['Tonga','+676'],['Trindade e Tobago','+1868'],['Tunísia','+216'],['Turquemenistão','+993'],['Turquia','+90'],['Ucrânia','+380'],['Uganda','+256'],['Uruguai','+598'],['Usbequistão','+998'],['Vanuatu','+678'],['Venezuela','+58'],['Vietname','+84'],['Zâmbia','+260'],['Zimbabué','+263']];
+const sections=['Sobre si','Experiência técnica','Formação e documentos','Autorização'];
+const questions=[
+{id:'Q1.1',s:0,t:'Qual é o seu primeiro e último nome?',type:'text',auto:'name'},
+{id:'Q1.2',s:0,t:'Qual é a sua idade?',type:'number',hint:'Indique a idade em anos.'},
+{id:'Q1.3',s:0,t:'Qual é o melhor número de WhatsApp para falarmos consigo?',type:'tel-cc',hint:'Escolha o indicativo do país e escreva o número, sem o indicativo.'},
+{id:'Q1.4',s:0,t:'Há quantos anos trabalha como pedreiro (trolha)?',hint:'Indique o número de anos.'},
+{id:'Q1.5',s:0,t:'Em que tipo de obras trabalhou?',hint:'Por exemplo: moradias, prédios, reabilitação, obras públicas, muros e anexos.'},
+{id:'Q1.6',s:0,t:'Trabalha atualmente? Em que empresa e quais são as suas funções?'},
+{id:'Q1.7',s:0,t:'Em que empresas trabalhou anteriormente e durante quanto tempo?'},
+{id:'Q1.8',s:0,t:'Qual é a sua nacionalidade?',o:['Cabo Verde','Senegal','Guiné-Bissau','Outro'],otherOption:'Outro',hint:'Escolha o país. Se não estiver na lista, escolha «Outro» e escreva o país.'},
+{id:'Q1.9',s:0,t:'Onde reside atualmente?',type:'text',hint:'Indique apenas a localidade, ilha ou região e o país. Não escreva a morada completa.'},
+{id:'Q1.10',s:0,t:'Tem disponibilidade para trabalhar em Portugal?',o:['Sim','Não']},
+{id:'Q2.1',s:1,t:'Descreva a última obra que fez do início ao fim: o que era, que trabalhos fez você e quanto tempo demorou.'},
+{id:'Q2.2',s:1,t:'Sabe ler e interpretar desenhos de obra (plantas, cortes e alçados)?',o:['Sim, sozinho','Com alguma orientação','Não']},
+{id:'Q2.3',s:1,t:'Consegue marcar a obra no terreno a partir do desenho, com medidas, esquadria e níveis?',o:['Sim, sozinho','Com alguma orientação','Não']},
+{id:'Q2.4',s:1,t:'Em que fases da obra tem experiência?',o:['Fundações','Cofragem e armaduras','Betonagem','Alvenaria (bloco ou tijolo)','Rebocos','Betonilhas','Assentamento de azulejo e mosaico','Acabamentos'],multi:true,hint:'Pode escolher mais do que uma opção.'},
+{id:'Q2.5',s:1,t:'Consegue calcular a partir do desenho as quantidades de material de que precisa (blocos, cimento, areia, ferro)?',o:['Sim','Aproximadamente','Não']},
+{id:'Q2.6',s:1,t:'Já esteve responsável por uma obra ou orientou outros trabalhadores?',o:['Não','Sim, orientei serventes','Sim, fui encarregado']},
+{id:'Q2.7',s:1,t:'Que ferramentas e equipamentos utiliza habitualmente?',hint:'Por exemplo: nível laser, fio de prumo, betoneira, régua, rebarbadora.'},
+{id:'Q2.8',s:1,t:'Está habituado a trabalhar em altura e em andaimes?',o:['Sim','Não']},
+{id:'Q2.9',s:1,t:'Tem carta de condução?',o:['Não','Categoria B','Categoria C','Outra']},
+{id:'Q2.10',s:1,t:'Pode apresentar referências profissionais dos locais onde trabalhou?',o:['Sim','Não']},
+{id:'Q2.11',s:1,t:'Fotos ou vídeos de obras',info:true,hint:'Se tiver fotos ou vídeos de obras feitas por si, de preferência de fases diferentes (estrutura, paredes, reboco, acabamento), envie-os separadamente à pessoa que lhe enviou este questionário. Nesta página não são anexados ficheiros.'},
+{id:'Q3.1',s:2,t:'Tem alguma formação em construção civil, pedreiro ou segurança no trabalho?',o:['Sim','Não'],hint:'A formação formal não é obrigatória.'},
+{id:'Q3.2',s:2,t:'Qual foi a formação que fez, onde e quanto tempo durou?',when:a=>a['Q3.1']==='Sim'},
+{id:'Q3.3',s:2,t:'Tem algum certificado dessa formação?',o:['Sim','Não','Não se aplica'],when:a=>a['Q3.1']==='Sim'},
+{id:'Q3.4',s:2,t:'Tem currículo atualizado?',o:['Sim','Não']},
+{id:'Q3.5',s:2,t:'Pode indicar o nome, a função e o contacto de uma pessoa que possa confirmar a sua experiência?',hint:'Por exemplo, um antigo encarregado ou supervisor. Indique o contacto apenas se a pessoa autorizar; pode responder «A indicar mais tarde».',when:a=>a['Q2.10']==='Sim'},
+{id:'Q3.6',s:2,t:'Tem alguma carta de recomendação ou declaração escrita de um empregador anterior?',o:['Sim','Não']},
+{id:'Q3.7',s:2,t:'Tem passaporte válido?',o:['Sim','Não','Está em processo de emissão']},
+{id:'Q3.8',s:2,t:'Qual é a data de validade do passaporte?',type:'text',hint:'Indique dia/mês/ano. Se não tiver a data consigo, escreva «A confirmar». Não indique o número do passaporte.',when:a=>a['Q3.7']==='Sim'},
+{id:'Q3.9',s:2,t:'Documentos que pode enviar depois',info:true,hint:'Se tiver currículo, certificados de formação ou carta de recomendação, envie-os separadamente à pessoa que lhe enviou este questionário. Nesta página não são anexados documentos. Não é necessário enviar a fotografia do passaporte.'},
+{id:'Q4.1',s:3,t:'Autoriza a utilização dos seus dados profissionais para esta candidatura?',o:['Sim, autorizo','Não autorizo'],hint:'As informações e os documentos que enviar serão utilizados para avaliar o seu perfil profissional e, caso reúna os requisitos, preparar uma ficha de apresentação para a empresa contratante em Portugal. Os seus contactos pessoais e documentos de identificação não serão enviados à empresa nesta fase. Após a análise, a equipa de recrutamento entrará em contacto consigo.'}
+];
+const answers=Object.create(null);
+let currentId=questions[0].id,editing=false;
+const $=id=>document.getElementById(id);
+const active=()=>questions.filter(q=>!q.when||q.when(answers));
+function show(id,focus){for(const name of ['welcome','question','review','done'])$(name).hidden=name!==id;window.scrollTo(0,0);if(focus)$(focus).focus();}
+function clearDependent(){for(const q of questions)if(q.when&&!q.when(answers))delete answers[q.id];}
+function setAnswer(q,value){answers[q.id]=value;clearDependent();$('error').textContent='';}
+function renderQuestion(){
+  const list=active(),index=list.findIndex(q=>q.id===currentId),q=list[index];
+  $('counter').textContent=`Passo ${index+1} de ${list.length}`;$('stage').textContent=sections[q.s];$('progress').value=Math.round(index/list.length*100);
+  $('questionTitle').textContent=q.t;$('hint').textContent=q.hint||(q.o?'Escolha uma opção.': 'Escreva a sua resposta abaixo.');$('answer').replaceChildren();$('error').textContent='';
+  if(q.o){
+    const group=document.createElement('div');group.className='choices';group.setAttribute('role','group');group.setAttribute('aria-labelledby','questionTitle');
+    const selected=q.multi?new Set((answers[q.id]||'').split(', ').filter(Boolean)):null;
+    const currentVal=answers[q.id]||'';
+    const isOther=q.otherOption&&currentVal&&!q.o.includes(currentVal);
+    const otherInput=q.otherOption?document.createElement('input'):null;
+    if(otherInput){otherInput.type='text';otherInput.id='otherField';otherInput.placeholder='Escreva o nome do país';otherInput.maxLength=60;otherInput.setAttribute('aria-label','Outro país');}
+    for(const option of q.o){
+      const button=document.createElement('button');button.type='button';button.className='choice';button.textContent=option;
+      const pressed=q.multi?selected.has(option):(option===q.otherOption?(isOther||currentVal===q.otherOption):currentVal===option);
+      button.setAttribute('aria-pressed',String(pressed));
+      button.onclick=()=>{
+        if(q.multi){
+          if(selected.has(option))selected.delete(option);else selected.add(option);
+          button.setAttribute('aria-pressed',String(selected.has(option)));
+          setAnswer(q,q.o.filter(o=>selected.has(o)).join(', '));
+          return;
+        }
+        for(const other of group.querySelectorAll('.choice'))other.setAttribute('aria-pressed',String(other===button));
+        if(option===q.otherOption){setAnswer(q,'');otherInput.hidden=false;otherInput.value='';otherInput.focus();}
+        else{setAnswer(q,option);if(otherInput){otherInput.hidden=true;otherInput.value='';}}
+      };
+      group.append(button);
+    }
+    $('answer').append(group);
+    if(otherInput){otherInput.hidden=!isOther;if(isOther)otherInput.value=currentVal;otherInput.oninput=()=>setAnswer(q,otherInput.value);$('answer').append(otherInput);}
+  }else if(!q.info){
+    if(q.type==='tel-cc'){
+      const row=document.createElement('div');row.className='phone-row';
+      const select=document.createElement('select');select.id='ccField';select.setAttribute('aria-label','Indicativo do país');
+      for(const [name,dial] of COUNTRY_CODES){const opt=document.createElement('option');opt.value=dial;opt.textContent=`${dial} ${name}`;select.append(opt);}
+      const input=document.createElement('input');input.id='field';input.type='tel';input.inputMode='tel';input.placeholder='Número sem indicativo';input.setAttribute('aria-labelledby','questionTitle');input.setAttribute('aria-describedby','hint error');input.required=true;
+      const existing=(answers[q.id]||'').trim();const match=existing.match(/^(\+\d+)\s*(.*)$/);
+      select.value=match?match[1]:'+238';input.value=match?match[2]:'';
+      const update=()=>setAnswer(q,(select.value+' '+input.value).trim());
+      select.onchange=update;input.oninput=update;
+      row.append(select,input);$('answer').append(row);
+    }else{
+      const field=document.createElement(q.type?'input':'textarea');field.id='field';if(q.type)field.type=q.type;field.value=answers[q.id]||'';field.setAttribute('aria-labelledby','questionTitle');field.setAttribute('aria-describedby','hint error');field.required=true;
+      if(q.type==='number'){field.min='1';field.max='120';field.step='1';field.inputMode='numeric';}else field.maxLength=q.type?250:4000;
+      if(q.auto)field.autocomplete=q.auto;field.oninput=()=>setAnswer(q,field.value);$('answer').append(field);
+    }
+  }
+  $('next').textContent=editing?'Guardar alteração →':index===list.length-1?'Rever respostas →':'Continuar →';show('question','questionTitle');
+}
+function validate(q){const value=(answers[q.id]||'').trim();let error='';if(!q.info&&!value)error=q.o?'Escolha uma opção para continuar.':'Escreva uma resposta para continuar.';else if(q.type==='number'&&(!/^\d+$/.test(value)||Number(value)<1||Number(value)>120))error='Indique uma idade válida, em anos completos.';else if(q.type==='tel-cc'){const number=value.replace(/^\+\d+\s*/,'');if(number.replace(/\D/g,'').length<5||number.replace(/\D/g,'').length>12)error='Escolha o indicativo e escreva um número de WhatsApp válido.';}if(error){$('error').textContent=error;const field=$('field');if(field){field.setAttribute('aria-invalid','true');field.focus();}return false;}return true;}
+function renderReview(){
+  $('reviewList').replaceChildren();for(const q of active().filter(q=>!q.info)){const item=document.createElement('div');item.className='review-item';const title=document.createElement('h3');title.textContent=q.t;const value=document.createElement('p');value.textContent=(answers[q.id]||'').trim()||'Por responder';const button=document.createElement('button');button.type='button';button.className='edit';button.textContent='Alterar resposta';button.setAttribute('aria-label',`Alterar: ${q.t}`);button.onclick=()=>{currentId=q.id;editing=true;renderQuestion();};item.append(title,value,button);$('reviewList').append(item);}show('review','reviewTitle');
+}
+function makeReport(){return ['CANDIDATURA — TRABALHO DE PEDREIRO (TROLHA) EM PORTUGAL',`Preparada em: ${new Date().toLocaleDateString('pt-PT')}`,'',...active().filter(q=>!q.info).map(q=>`${q.id} · ${q.t}\n${(answers[q.id]||'').trim()}\n`),'Documentos: enviar separadamente ao contacto de recrutamento.'].join('\n');}
+$('start').onclick=()=>renderQuestion();
+$('form').onsubmit=event=>{event.preventDefault();const list=active(),index=list.findIndex(q=>q.id===currentId);if(!validate(list[index]))return;if(editing){editing=false;renderReview();return;}if(index===list.length-1){renderReview();return;}currentId=list[index+1].id;renderQuestion();};
+$('back').onclick=()=>{if(editing){editing=false;renderReview();return;}const list=active(),index=list.findIndex(q=>q.id===currentId);if(index===0){show('welcome');return;}currentId=list[index-1].id;renderQuestion();};
+$('reviewBack').onclick=()=>{currentId=active().at(-1).id;editing=false;renderQuestion();};
+$('finish').onclick=()=>{
+  const missing=active().find(q=>!q.info&&!(answers[q.id]||'').trim());
+  if(missing){currentId=missing.id;editing=true;renderQuestion();$('error').textContent='Responda a esta pergunta antes de terminar.';return;}
+  $('exportText').value=makeReport();$('deliveryStatus').textContent='';const consent=answers['Q4.1']==='Sim, autorizo';
+  $('doneTitle').textContent=consent?'As respostas estão prontas.':'Registámos que não autoriza.';
+  $('deliveryIntro').textContent=consent?'Para entregar a candidatura, envie as respostas por WhatsApp.':'Pode voltar à revisão para alterar a sua escolha.';
+  $('whatsapp').hidden=!consent;
+  $('done').querySelector('.notice').textContent=consent?'A candidatura ainda não foi enviada. Toque no botão para abrir o WhatsApp com as respostas já preenchidas e confirme o envio.':'Não autorizou a utilização dos dados para recrutamento. Pode voltar à revisão. Não partilhe esta ficha como candidatura sem autorizar.';
+  show('done','doneTitle');
+};
+$('editAll').onclick=renderReview;
+$('whatsapp').onclick=()=>{
+  if(answers['Q4.1']!=='Sim, autorizo')return;
+  window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent($('exportText').value),'_blank');
+  $('deliveryStatus').textContent='O WhatsApp vai abrir com as respostas preenchidas. Confirme o envio na conversa.';
+};
+window.addEventListener('beforeunload',event=>{if(Object.keys(answers).length){event.preventDefault();event.returnValue='';}});
+</script>
+</body>
+</html>
